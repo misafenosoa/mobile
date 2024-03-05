@@ -3,9 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <title>Ionic App</title>
-
+    
     <base href="/" />
-
+    
     <meta name="color-scheme" content="light dark" />
     <meta
       name="viewport"
@@ -13,19 +13,33 @@
     />
     <meta name="format-detection" content="telephone=no" />
     <meta name="msapplication-tap-highlight" content="no" />
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <script>
+      WebFont.load({
+        google: {"families":["Montserrat:400,500,600,700","Noto+Sans:400,700"]},
+        active: function() {
+            sessionStorage.fonts = true;
+        }
+      });
 
-    <link rel="shortcut icon" type="image/png" href="%PUBLIC_URL%/assets/icon/favicon.png" />
+    </script>
 
+    <link rel="manifest" href="/manifest.json" />
+    
+    <link rel="shortcut icon" type="image/png" href="/favicon.png" />
+    <link rel="stylesheet" href="./assets/vendors/css/base/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/vendors/css/base/elisyam-1.5.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- add to homescreen for ios -->
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-title" content="Ionic App" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
   </head>
-
   <body>
     <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
-
 </html>

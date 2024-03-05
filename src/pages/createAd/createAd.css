@@ -1,0 +1,131 @@
+.navcreate {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20%;
+}
+
+.spacer {
+    margin-right: 10px; 
+}
+
+
+#model, textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 12px;
+    height: 52px;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #2c304d;
+    padding: .75rem 1.07rem;
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1);
+    text-indent: 20px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+
+.lab {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    transition: top 0.3s, font-size 0.3s;
+}
+
+.form-group input:focus + label, .form-group textarea:focus + label, .form-group select:focus + label {
+    top: 10px;
+    font-size: 0.9rem;
+}
+
+.file-input-container {
+    position: relative;
+    display: inline-block;
+}
+
+.file-input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.filelabel {
+    background-color: #e65959;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: -19px;
+}
+
+.file-preview {
+    margin-top: 34px;
+    display: flex;
+    flex-direction: row;
+}
+
+.file-preview img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+}
+
+#description {
+    height: 105px;
+}
+
+#description-label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 20px;
+    transition: top 0.3s, font-size 0.3s;
+}
+
+#description:focus + #description-label,
+#description:not(:placeholder-shown) + #description-label {
+    top: 2px;
+    font-size: 12px;
+    color: #888;
+}
+
+.file-preview-item {
+    position: relative;
+    display: inline-block;
+}
+
+.file-preview-item img {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.file-preview-item button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+

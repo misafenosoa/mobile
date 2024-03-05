@@ -1,0 +1,103 @@
+login.css
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* background-image: url('your-background-image.jpg'); */
+    background-size: cover;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .form {
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .form .form-group {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .form input {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+    height: 60px;
+    font-size: 1rem;
+    line-height: 1.25;
+    color: #2c304d;
+    border: 1px solid #eee;
+    border-radius: 15px;
+    padding: .75rem 1.07rem;
+    box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1);
+    text-indent: 20px;
+  }
+  
+  .labellogin {
+    position: absolute;
+    left: 42px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.2s;
+    pointer-events: none;
+  }
+  
+  .form input:focus + label,
+  .form input:not(:placeholder-shown) + label {
+    top: 7px;
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3e4685;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    height: 46px;
+    margin-bottom: 28px;
+
+  }
+  
+  .logimg {
+
+    padding-bottom: 40px;
+    height: 210px;
+  }
+  
+  #in {
+    margin-bottom: -40px;
+    border-radius: 10px;
+  }
+  
+  .form .input-icon {
+    position: absolute;
+    top: 23px;
+    left: 10px;
+    color: #888;
+  }
+
+  .toggle-password {
+    position: absolute;
+    top: 23px;
+    left: 85%;
+  }
+  .form input[type="password"] {
+    padding-right: 40px; 
+  }
+  
+
+  .ref {
+    background-color: transparent;
+    color: #080808;
+
+  }
+

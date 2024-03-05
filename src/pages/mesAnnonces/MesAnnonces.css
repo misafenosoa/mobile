@@ -1,0 +1,69 @@
+/* MesAnnonces.css */
+.annonce-card {
+    margin-bottom: 20px;
+  }
+  
+  .annonce-image {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .annonce-card ion-card-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .annonce-card ion-card-content {
+    font-size: 16px;
+  }
+  
+  .annonce-card ion-card-content p {
+    margin-bottom: 10px;
+  }
+  
+  .annonce-card ion-card-content p strong {
+    font-weight: bold;
+  }
+  
+  /* Styles pour la représentation de l'état général */
+  .etat-general {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .barre {
+    height: 10px;
+    background-color: #e0e0e0; /* Couleur de la barre totale */
+    width: 72%;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .etat-actuel {
+    height: 100%;
+    background-color: #4700b1; /* Couleur de la barre de l'état actuel */
+  }
+  
+  .etat-total {
+    height: 100%;
+    background-color: #ffffff; /* Couleur de la barre non remplie */
+  }
+  
+  .note {
+    margin-left: 10px;
+  }
+  
+  .btnV {
+    margin-left: -7px;
+
+  }
+
+  .center{
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat';
+    margin-top: 18px;
+    color: #0000aa;
+
+  }
